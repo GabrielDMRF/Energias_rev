@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Solar - Energías Renovables</title>
+    <link rel="icon" href="/img/sol-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+
+<body class="bg-gray-50 text-black leading-normal">
+
+    <!-- Encabezado -->
+    <header class="bg-yellow-600 text-white p-6 flex flex-col md:flex-row items-center justify-center">
+        <!-- Botón Volver al inicio -->
+        <div class="md:absolute md:left-4 mb-4 md:mb-0 w-full md:w-auto flex justify-center md:justify-start">
+            <button
+                class=" text-center w-full md:w-48 rounded-2xl h-14 relative text-white text-lg md:text-xl font-semibold group border border-yellow-600 transition duration-300 ease-in-out"
+                type="button"
+                onclick="window.location.href='index.html';" 
+            >
+                <div
+                    class="bg-black rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-full md:group-hover:w-[184px] z-10 duration-500"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1024 1024"
+                        height="20px"
+                        width="20px"
+                    >
+                        <path
+                            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+                            fill="#ffffff"
+                        ></path>
+                        <path
+                            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                            fill="#ffffff"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="translate-x-2">Volver</p>
+            </button>
+        </div>
+    
+        <!-- Título del encabezado -->
+        <div class="flex-grow text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Energía Solar</h1>
+            <p class="mt-2">Descubre cómo la energía solar está transformando el mundo.</p>
+        </div>
+    </header>
+    
+    
+    
+
+    <!-- Sección de Introducción -->
+    <section class="container mx-auto p-6 text-center">
+        <h2 class="text-2xl font-semibold mb-4">¿Qué es la Energía Solar?</h2>
+        <p class="text-lg leading-relaxed">
+            La energía solar es una fuente renovable que se obtiene del sol. A través de paneles solares, podemos capturar esta energía para generar electricidad y calor.
+        </p>
+    </section>
+
+    <!-- Sección de Ventajas y Desventajas -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Ventajas y Desventajas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Ventajas -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition duration-300 border border-yellow-300">
+                <h3 class="text-2xl font-semibold text-yellow-600 mb-4">Ventajas</h3>
+                <ul class="text-gray-600 space-y-2">
+                    <li>✅ Recurso ilimitado y renovable.</li>
+                    <li>✅ Baja huella de carbono.</li>
+                    <li>✅ Reduce la dependencia de combustibles fósiles.</li>
+                    <li>✅ Ahorro en costos de energía a largo plazo.</li>
+                </ul>
+            </div>
+
+            <!-- Desventajas -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition duration-300 border border-yellow-300">
+                <h3 class="text-2xl font-semibold text-yellow-600 mb-4">Desventajas</h3>
+                <ul class="text-gray-600 space-y-2">
+                    <li>⚠️ Depende de la luz solar y las condiciones climáticas.</li>
+                    <li>⚠️ Requiere espacio para instalaciones grandes.</li>
+                    <li>⚠️ Alta inversión inicial en equipos.</li>
+                    <li>⚠️ Impacto ambiental de la fabricación de paneles.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información Detallada -->
+   
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">¿Cómo Funciona la Energía Solar?</h2>
+        <p class="text-gray-700 mt-4">
+            La energía solar es capturada mediante paneles fotovoltaicos, que convierten la luz solar en electricidad. Esta tecnología es ampliamente utilizada en áreas con alta exposición solar, y sus aplicaciones van desde el uso doméstico hasta grandes plantas de energía.
+        </p>
+        <p class="text-gray-700 mt-2">
+            Además de la energía fotovoltaica, la energía solar térmica se utiliza para calentar agua y generar energía en plantas termosolares, que concentran la luz solar para producir vapor y activar turbinas.
+        </p>
+    </section>
+
+
+
+    <!-- Sección de Aplicaciones -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Aplicaciones de la Energía Solar</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-2">Residencial</h3>
+                <p class="text-gray-600">
+                    Instalación de paneles solares en hogares para reducir la factura eléctrica y aumentar la autonomía energética.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-2">Industrial</h3>
+                <p class="text-gray-600">
+                    Grandes instalaciones solares para suministrar energía a fábricas y procesos industriales, disminuyendo costos operativos.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-2">Comercial</h3>
+                <p class="text-gray-600">
+                    Uso de energía solar en edificios comerciales para reducir el consumo energético y promover la sostenibilidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Gráficos con D3.js -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-yellow-600 text-center mb-4">Crecimiento en el Uso de Energía Solar</h2>
+        <p class="text-gray-600 text-center mb-6">Este gráfico muestra el incremento de capacidad instalada de energía solar a nivel global en los últimos años.</p>
+        
+        <!-- Contenedor del gráfico (Aumenta la altura aquí) -->
+        <div class="flex justify-center">
+            <div id="solarChart" class="w-full max-w-4xl h-112 bg-white rounded-lg shadow-md p-4"></div> <!-- Cambié la altura de h-96 a h-112 -->
+        </div>
+    </section>
+
+
+    <!-- Sección de Impacto Ambiental -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Impacto Ambiental</h2>
+        <p class="text-gray-700 mt-4">
+            La energía solar contribuye significativamente a la reducción de emisiones de gases de efecto invernadero. Al reemplazar fuentes de energía fósil, ayuda a mitigar el cambio climático y promueve un entorno más limpio.
+        </p>
+        <p class="text-gray-700 mt-2">
+            Además, el uso de energía solar disminuye la contaminación del aire y del agua, mejorando la salud pública y preservando los ecosistemas naturales.
+        </p>
+    </section>
+
+    <!-- Botón de Contacto -->
+    <section class="container mx-auto p-6 text-center">
+        <button
+            type="button"
+            class="flex justify-center gap-2 items-center mx-auto text-lg bg-yellow-600 border-yellow-600 hover:bg-yellow-700 hover:text-gray-50 relative px-4 py-2 overflow-hidden border-2 rounded-full group transition-all duration-300"
+        >
+            Contactar
+            <svg
+                class="w-6 h-6 justify-end text-gray-50 ease-linear duration-300 rounded-full border border-yellow-700 group-hover:border-none p-1"
+                viewBox="0 0 16 19"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893
+                class="fill-gray-50 group-hover:fill-gray-50"
+                ></path>
+            </svg>
+        </button>
+    </section>
+
+    <!-- Botón de Subir -->
+<button id="scrollToTopBtn" class="fixed bottom-[5rem] sm:bottom-16 sm:right-6 right-1 bg-yellow-600 text-white text-2xl py-2 px-4 rounded-full shadow-lg hover:bg-yellow-700 transition duration-300 opacity-0 pointer-events-none">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+    <!-- Footer -->
+    <footer class="bg-yellow-600 text-white text-center p-6 mt-12">
+        <p class="text-sm">
+            &copy; 2024 Energías Renovables. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="scripts/solargraphic.js"></script>
+    <script src="scripts/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Geotérmica - Energías Renovables</title>
+    <link rel="icon" href="/img/termo-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body class="bg-gray-50 text-black leading-normal">
+
+    <!-- Encabezado -->
+    <header class="bg-orange-500 text-white p-6 flex flex-col md:flex-row items-center justify-center">
+        <!-- Botón Volver al inicio -->
+        <div class="md:absolute md:left-4 mb-4 md:mb-0 w-full md:w-auto flex justify-center md:justify-start">
+            <button
+                class=" text-center w-full md:w-48 rounded-2xl h-14 relative text-white text-lg md:text-xl font-semibold group border border-orange-500 transition duration-300 ease-in-out"
+                type="button"
+                onclick="window.location.href='index.html';" 
+            >
+                <div
+                    class="bg-black rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-full md:group-hover:w-[184px] z-10 duration-500"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1024 1024"
+                        height="20px"
+                        width="20px"
+                    >
+                        <path
+                            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+                            fill="#ffffff"
+                        ></path>
+                        <path
+                            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                            fill="#ffffff"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="translate-x-2">Volver</p>
+            </button>
+        </div>
+    
+        <!-- Título del encabezado -->
+        <div class="flex-grow text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Energía Geotérmica</h1>
+            <p class="mt-2">Explora cómo la energía geotérmica está ayudando en la transición hacia fuentes de energía limpias.</p>
+        </div>
+    </header>
+    
+    <!-- Sección de Introducción -->
+    <section class="container mx-auto p-6 text-center">
+        <h2 class="text-2xl font-semibold mb-4">¿Qué es la Energía Geotérmica?</h2>
+        <p class="text-lg leading-relaxed">
+            La energía geotérmica proviene del calor almacenado bajo la superficie terrestre. Este calor se puede aprovechar para generar electricidad o para aplicaciones de calefacción directa.
+        </p>
+    </section>
+
+    <!-- Sección de Ventajas y Desventajas -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Ventajas y Desventajas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Ventajas -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition duration-300 border border-orange-300">
+                <h3 class="text-2xl font-semibold text-orange-600 mb-4">Ventajas</h3>
+                <ul class="text-gray-600 space-y-2">
+                    <li>✅ Fuente constante de energía, independientemente del clima.</li>
+                    <li>✅ Bajo impacto ambiental en comparación con combustibles fósiles.</li>
+                    <li>✅ Reducción de la dependencia de fuentes de energía no renovables.</li>
+                    <li>✅ Requiere menos espacio que otras fuentes de energía renovable como la solar o la eólica.</li>
+                </ul>
+            </div>
+
+            <!-- Desventajas -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition duration-300 border border-orange-300">
+                <h3 class="text-2xl font-semibold text-orange-600 mb-4">Desventajas</h3>
+                <ul class="text-gray-600 space-y-2">
+                    <li>⚠️ Requiere una inversión inicial alta.</li>
+                    <li>⚠️ No disponible en todas las regiones geográficas.</li>
+                    <li>⚠️ Riesgo de emisiones de gases si no se gestionan adecuadamente los pozos geotérmicos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información Detallada -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">¿Cómo Funciona la Energía Geotérmica?</h2>
+        <p class="text-gray-700 mt-4">
+            Los sistemas geotérmicos aprovechan el calor de la Tierra. Este calor se puede extraer de manera directa (calefacción) o mediante la generación de electricidad mediante plantas geotérmicas.
+        </p>
+    </section>
+
+    <!-- Sección de Aplicaciones -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Aplicaciones de la Energía Geotérmica</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-orange-600 mb-2">Residencial</h3>
+                <p class="text-gray-600">
+                    Sistemas de calefacción geotérmica para hogares, aprovechando el calor de la Tierra.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-orange-600 mb-2">Industrial</h3>
+                <p class="text-gray-600">
+                    Utilización de plantas geotérmicas para generar electricidad en zonas con recursos geotérmicos abundantes.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-orange-600 mb-2">Comercial</h3>
+                <p class="text-gray-600">
+                    Uso de energía geotérmica para calefacción o refrigeración en edificios comerciales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Gráficos con D3.js -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-orange-600 text-center mb-4">Crecimiento en el Uso de Energía Geotérmica</h2>
+        <p class="text-gray-600 text-center mb-6">Este gráfico muestra el incremento de la capacidad instalada de energía geotérmica en los últimos años.</p>
+        
+        <div class="flex justify-center">
+            <div id="geoChart" class="w-full max-w-4xl h-112 bg-white rounded-lg shadow-md p-4"></div>
+        </div>
+    </section>
+
+
+    <!-- Botón de Subir -->
+<button id="scrollToTopBtn" class="fixed bottom-[5rem] sm:bottom-16 sm:right-6 right-1 bg-orange-600 text-white text-2xl py-2 px-4 rounded-full shadow-lg hover:bg-orange-700 transition duration-300 opacity-0 pointer-events-none">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+    <!-- Footer -->
+    <footer class="bg-orange-500 text-white text-center py-6">
+        <p>&copy; 2024 Energías Renovables - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/geographic.js"></script>
+    <script src="scripts/scroll.js"></script>
+</body>
+</html>

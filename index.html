@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora las diferentes fuentes de energías renovables, sus beneficios, y cómo contribuyen a un futuro más sostenible.">
+    <title>Energías Renovables</title>
+    <link rel="icon" href="/img/hoja-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="bg-gray-100 text-black ">
+
+
+
+    <header class="bg-green-600 text-white p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <img class="size-[3%] bg-white rounded-full" src="/img/hoja-removebg-preview.png" alt="logo">
+            <h1 class="text-2xl font-bold">Energías Renovables</h1>
+            <nav class="hidden md:flex space-x-4">
+                <a href="/solar.html" class="group relative text-white">Solar
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="/eolica.html" class="group relative text-white">Eólica
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="/hidroelectrica.html" class="group relative text-white">Hidroeléctrica
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="/geotermica.html" class="group relative text-white">Geotérmica
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="/beneficios.html" class="group relative text-white">Beneficios
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="#faq" class="group relative text-white">FAQ
+                    <div class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+
+    
+
+<!-- Sección de Tipos de Energía -->
+<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 mt-8">
+    
+    <!-- Energía Solar -->
+    <div id="solar" class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <img src="./img/energia solar.jpg" alt="Energía Solar" class="w-full h-32 object-cover rounded-md mb-4">
+        <div>
+            <h3 class="text-xl font-semibold">Energía Solar</h3>
+            <p class="mt-2 text-gray-600">
+                La energía solar se obtiene a partir de la luz del sol y es utilizada en paneles solares para generar electricidad o calor.
+            </p>
+        </div>
+    <a href="/solar.html">
+        <button
+        type="submit"
+        class="flex justify-center gap-2 items-center mx-auto text-lg bg-gray-50 border-gray-50 lg:font-semibold isolation-auto border-gray-50 hover:bg-green-500 hover:text-gray-50 relative px-4 py-2 overflow-hidden border-2 rounded-full group transition-all duration-300"
+    >
+    Leer más
+        <svg
+        class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-800 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2"
+        viewBox="0 0 16 19"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <path
+            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+            class="fill-gray-800 group-hover:fill-gray-800"
+        ></path>
+        </svg>
+    </button>
+    </a>
+    </div>
+    
+    <!-- Energía Eólica -->
+    <div id="eolica" class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <img src="./img/energia eolica.jpg" alt="Energía Eólica" class="w-full h-32 object-cover rounded-md mb-4">
+        <div>
+            <h3 class="text-xl font-semibold">Energía Eólica</h3>
+            <p class="mt-2 text-gray-600">
+                La energía eólica utiliza el viento para generar electricidad mediante aerogeneradores ubicados en zonas ventosas.
+            </p>
+        </div>
+        <a href="/eolica.html">
+            <button
+            type="submit"
+            class="flex justify-center gap-2 items-center mx-auto text-lg bg-gray-50 border-gray-50 lg:font-semibold isolation-auto border-gray-50 hover:bg-green-500 hover:text-gray-50 relative px-4 py-2 overflow-hidden border-2 rounded-full group transition-all duration-300"
+        >
+        Leer más
+            <svg
+            class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-800 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2"
+            viewBox="0 0 16 19"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                class="fill-gray-800 group-hover:fill-gray-800"
+            ></path>
+            </svg>
+        </button>
+        </a>
+    </div>
+    
+    <!-- Energía Hidroeléctrica -->
+    <div id="hidroelectrica" class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <img src="./img/energia hidroelectica.jpg" alt="Energía Hidroeléctrica" class="w-full h-32 object-cover rounded-md mb-4">
+        <div>
+            <h3 class="text-xl font-semibold">Energía Hidroeléctrica</h3>
+            <p class="mt-2 text-gray-600">
+                La energía hidroeléctrica utiliza el agua en movimiento, como ríos o presas, para generar electricidad.
+            </p>
+        </div>
+        <a href="/hidroelectrica.html">
+            <button
+            type="submit"
+            class="flex justify-center gap-2 items-center mx-auto text-lg bg-gray-50 border-gray-50 lg:font-semibold isolation-auto border-gray-50 hover:bg-green-500 hover:text-gray-50 relative px-4 py-2 overflow-hidden border-2 rounded-full group transition-all duration-300"
+        >
+        Leer más
+            <svg
+            class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-800 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2"
+            viewBox="0 0 16 19"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                class="fill-gray-800 group-hover:fill-gray-800"
+            ></path>
+            </svg>
+        </button>
+        </a>
+    </div>
+    
+    <!-- Energía Geotérmica -->
+    <div id="geotermica" class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <img src="./img/energia geotermica.jpg" alt="Energía Geotérmica" class="w-full h-32 object-cover rounded-md mb-4">
+        <div>
+            <h3 class="text-xl font-semibold">Energía Geotérmica</h3>
+            <p class="mt-2 text-gray-600">
+                La energía geotérmica utiliza el calor interno de la Tierra para generar electricidad o calefacción.
+            </p>
+        </div>
+        <a href="/geotermica.html">
+            <button
+            type="submit"
+            class="flex justify-center gap-2 items-center mx-auto text-lg bg-gray-50 border-gray-50 lg:font-semibold isolation-auto border-gray-50 hover:bg-green-500 hover:text-gray-50 relative px-4 py-2 overflow-hidden border-2 rounded-full group transition-all duration-300"
+        >
+        Leer más
+            <svg
+            class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-800 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2"
+            viewBox="0 0 16 19"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                class="fill-gray-800 group-hover:fill-gray-800"
+            ></path>
+            </svg>
+        </button>
+        </a>
+    </div>
+</section>
+
+
+    
+    
+    
+
+
+    
+<!-- Sección de Beneficios -->
+<section id="beneficios" class="p-4 mt-10 mb-0">
+    <div class="container mx-auto bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-6">
+        <h2 class="text-2xl font-semibold text-center">Beneficios de las Energías Renovables</h2>
+        <ul class="mt-4 space-y-3 text-gray-700">
+            <li>🔋 Reducción de emisiones de gases de efecto invernadero.</li>
+            <li>🌱 Disminución de la dependencia de combustibles fósiles.</li>
+            <li>💧 Contribución a la conservación de los recursos naturales.</li>
+            <li>📉 Creación de empleos y crecimiento económico en sectores sostenibles.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+<!-- Sección FAQ -->
+<section id="faq" class="container mx-auto mt-10 p-4">
+    <h2 class="text-2xl font-semibold text-center">Preguntas Frecuentes</h2>
+    <div class="mt-4 space-y-4">
+        <details class="group border rounded-lg p-4 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+            <summary class="font-semibold text-lg cursor-pointer">¿Cuál es la fuente de energía renovable más eficiente?</summary>
+            <p class="mt-2 text-gray-600 overflow-hidden max-h-0 group-open:max-h-96 transition-all duration-500">
+                La eficiencia varía según el contexto, pero la energía hidroeléctrica es conocida por su alta capacidad de producción en relación con el costo.
+            </p>
+        </details>
+
+        <details class="group border rounded-lg p-4 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+            <summary class="font-semibold text-lg cursor-pointer">¿Son las energías renovables realmente sostenibles?</summary>
+            <p class="mt-2 text-gray-600 overflow-hidden max-h-0 group-open:max-h-96 transition-all duration-500">
+                Sí, las energías renovables provienen de fuentes naturales inagotables o con capacidad de regenerarse rápidamente, lo que las hace sostenibles a largo plazo.
+            </p>
+        </details>
+
+        <details class="group border rounded-lg p-4 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+            <summary class="font-semibold text-lg cursor-pointer">¿Cuáles son los desafíos de las energías renovables?</summary>
+            <p class="mt-2 text-gray-600 overflow-hidden max-h-0 group-open:max-h-96 transition-all duration-500">
+                Algunos desafíos incluyen los altos costos iniciales de infraestructura y la variabilidad de ciertas fuentes como la solar y la eólica.
+            </p>
+        </details>
+    </div>
+    <div class="flex justify-center items-center mt-9">
+
+<a href="/FAQ.html">
+    <button
+  type="submit"
+  class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-green-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+>
+  Leer más
+  <svg
+    class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+    viewBox="0 0 16 19"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+      class="fill-gray-800 group-hover:fill-gray-800"
+    ></path>
+  </svg>
+</button>
+</a>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+ <!-- Navbar para dispositivos móviles, ajustada para no quedar debajo de la principal -->
+ <nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-green-600 text-white py-4 shadow-lg z-20">
+    <div class="container mx-auto flex justify-around items-center space-x-4">
+        <a href="#solar" class="text-white text-3xl hover:text-gray-300" title="Energía Solar">
+            <i class="fas fa-sun"></i>
+        </a>
+        <a href="#eolica" class="text-white text-3xl hover:text-gray-300" title="Energía Eólica">
+            <i class="fas fa-wind"></i>
+        </a>
+        <a href="#hidroelectrica" class="text-white text-3xl hover:text-gray-300" title="Energía Hidroeléctrica">
+            <i class="fas fa-tint"></i>
+        </a>
+        <a href="#geotermica" class="text-white text-3xl hover:text-gray-300" title="Energía Geotérmica">
+            <i class="fas fa-fire"></i>
+        </a>
+        <a href="#beneficios" class="text-white text-3xl hover:text-gray-300" title="Beneficios">
+            <i class="fas fa-leaf"></i>
+        </a>
+        <a href="#faq" class="text-white text-3xl hover:text-gray-300" title="FAQ">
+            <i class="fas fa-question-circle"></i>
+        </a>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Botón de Subir -->
+<button id="scrollToTopBtn" class="fixed bottom-[5rem] sm:bottom-16 sm:right-6 right-1 bg-green-600 text-white text-2xl py-2 px-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300 opacity-0 pointer-events-none">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+
+
+
+
+
+<!-- Footer para pantallas grandes (md y mayores) -->
+<footer class="hidden md:block bg-green-700 text-white text-center p-5 mt-8 mb-0">
+    <p class="text-sm">
+        &copy; 2024 Energías Renovables. Todos los derechos reservados.
+    </p>
+    <div></div>
+</footer>
+
+<!-- Footer para pantallas pequeñas (menos de md) -->
+<footer class="lg:hidden bg-green-700 text-white text-center p-5 mt-8 mb-[4.3rem]">
+    <p class="text-sm">
+        &copy; 2024 Energías Renovables. Todos los derechos reservados.
+    </p>
+    <div></div>
+</footer>
+
+
+    <!-- Optimización de rendimiento -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => img.setAttribute('loading', 'lazy'));
+        });
+    </script>
+    <script src="scripts/scroll.js"></script>
+</body>
+</html>
